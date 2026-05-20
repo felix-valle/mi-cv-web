@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi curriculum Profesional</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button onclick="cambiarModo()" style="padding: 10px; margin: 10px; cursor: pointer;">Cambiar Color</button>
+        <div class="container">
+            <div class="header">
+                <div class="img-area">
+                    <img src="foto_curriculum.jpeg" alt="Foto curriculum">
+                </div>
+                <h1>Felix Valle Montes</h1>
+                <h3>Estudiante de aplicaciones web (1º DAW)</h3>
+            </div>
+
+            <div class="main">
+                <div class="left">
+                    <h2>Informacion Personal</h2>
+                    <p><strong>Nombre: </strong>Felix Valle Montes</p>
+                    <p><strong>Edad: </strong>20</p>
+                    <p><strong>Correo Electronico: </strong>felixvallevm@gmail.com</p>
+                    <p><strong>Telefono: </strong>633373096</p>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>Puedo programar en phyton/html</li>
+                        <li>Soy social y me encanta trabajar en equipo</li>
+                        <li>En caso de no estar especializado en algo puedo estudiarlo y aprenderlo facilmente</li>
+                    </ul>
+                    <h2>Estudios</h2>
+                    <h3>Ciclo medio de sistemas microinformaticos y redes</h3>
+                    <p>Ies vicente nuñez</p>
+                    <h3>Ciclo superior de programacion web (DAW)</h3>
+                    <p>Ies gran capitan</p>
+                </div>
+
+                <div class="right">
+                    <h2>Experiencias de trabajo</h2>
+                    <h3>Practicas en la Mancomunidad de aguilar de la frontera : 3 meses</h3>
+                    <h3>Practicas en el ayuntamiento de aguilar de la frontera : 3 meses</h3>
+                </div>
+            </div>
+        </div>
+    <script>
+    function cambiarModo() {
+        document.querySelector('.container').classList.toggle('oscuro');
+    }
+</script>
+    </body>
