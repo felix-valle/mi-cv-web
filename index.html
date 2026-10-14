@@ -2,119 +2,80 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Félix Valle Montes</title>
+    <title>CV - Félix Valle Montes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado / Header -->
+        <!-- Encabezado -->
         <header class="header">
-            <div class="header-content">
-                <div class="img-area">
-                    <img src="foto_curriculum.jpeg" alt="Fotografía de Félix Valle Montes">
-                </div>
-                <div class="header-text">
-                    <h1>Félix Valle Montes</h1>
-                    <h2>Desarrollador Web (Estudiante de 2º de DAW)</h2>
-                    <p class="tagline">Especializándome en desarrollo frontend y backend con base en sistemas y redes.</p>
-                </div>
+            <div class="img-area">
+                <img src="foto_curriculum.jpeg" alt="Félix Valle Montes">
             </div>
-            <button onclick="cambiarModo()" class="btn-toggle-theme" aria-label="Cambiar modo de color">
-                🌙 Modo Oscuro / Claro
-            </button>
+            <h1>Félix Valle Montes</h1>
+            <h3>Estudiante 2º DAW | Desarrollo Web</h3>
+            <button onclick="cambiarModo()" class="btn-toggle">🌙 Modo</button>
         </header>
 
-        <!-- Contenido Principal -->
+        <!-- Contenido principal -->
         <main class="main">
-            <!-- Columna Izquierda: Información de contacto, Habilidades y Formación -->
-            <aside class="left">
-                <section class="section">
+            <!-- Columna Izquierda -->
+            <div class="left">
+                <section>
                     <h2>Contacto</h2>
-                    <ul class="contact-info">
-                        <li><strong>Email:</strong> <a href="mailto:felixvallevm@gmail.com">felixvallevm@gmail.com</a></li>
-                        <li><strong>Teléfono:</strong> <a href="tel:+34633373096">+34 633 37 30 96</a></li>
-                        <li><strong>Ubicación:</strong> Córdoba, España</li>
-                        <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/felixvalle</a></li>
-                        <li><strong>GitHub:</strong> <a href="#" target="_blank">github.com/felixvalle</a></li>
+                    <p><strong>Email:</strong> felixvallevm@gmail.com</p>
+                    <p><strong>Teléfono:</strong> 633 37 30 96</p>
+                    <p><strong>Ubicación:</strong> Córdoba</p>
+                </section>
+
+                <section>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>HTML5, CSS3, JS, PHP, Python</li>
+                        <li>MySQL, Git, Linux</li>
+                        <li>Trabajo en equipo y proactividad</li>
+                        <li>Aprendizaje rápido</li>
                     </ul>
                 </section>
 
-                <section class="section">
-                    <h2>Competencias Técnicas</h2>
-                    <ul class="skills-list">
-                        <li><strong>Lenguajes:</strong> HTML5, CSS3, JavaScript, PHP, Python</li>
-                        <li><strong>Bases de Datos:</strong> MySQL / MariaDB</li>
-                        <li><strong>Herramientas y Entornos:</strong> Git, GitHub, VS Code</li>
-                        <li><strong>Sistemas y Redes:</strong> Linux, Windows Server, Redes Locales (LAN/WLAN)</li>
-                    </ul>
+                <section>
+                    <h2>Educación</h2>
+                    <p><strong>G.S. Desarrollo Web (DAW)</strong><br>IES Gran Capitán (En curso)</p>
+                    <p><strong>G.M. Sistemas y Redes (SMR)</strong><br>IES Vicente Núñez</p>
                 </section>
+            </div>
 
-                <section class="section">
-                    <h2>Aptitudes Profesionales</h2>
-                    <ul class="soft-skills">
-                        <li>Trabajo en equipo y comunicación proactiva</li>
-                        <li>Capacidad de aprendizaje rápido y autodidacta</li>
-                        <li>Resolución eficiente de problemas técnicos</li>
-                        <li>Adaptabilidad a nuevas tecnologías y metodologías</li>
-                    </ul>
-                </section>
-
-                <section class="section">
-                    <h2>Formación Académica</h2>
-                    <div class="education-item">
-                        <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
-                        <p class="institution">IES Gran Capitán, Córdoba</p>
-                        <p class="date">Actualmente cursando (2º curso) | 2024 - Presente</p>
-                    </div>
-                    <div class="education-item">
-                        <h3>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
-                        <p class="institution">IES Vicente Núñez, Aguilar de la Frontera</p>
-                        <p class="date">Completado</p>
-                    </div>
-                </section>
-            </aside>
-
-            <!-- Columna Derecha: Experiencia Laboral y Perfil -->
-            <section class="right">
-                <section class="section">
-                    <h2>Perfil Profesional</h2>
-                    <p>
-                        Estudiante de último curso del Grado Superior de Desarrollo de Aplicaciones Web con formación previa en Sistemas Microinformáticos y Redes. Apasionado por la programación web, el desarrollo de software a medida y la resolución de retos técnicos. Buscando una oportunidad de prácticas FCT donde aportar valor, seguir aprendiendo de un equipo experimentado y desarrollarme profesionalmente.
-                    </p>
-                </section>
-
-                <section class="section">
-                    <h2>Experiencia Laboral / Prácticas</h2>
+            <!-- Columna Derecha -->
+            <div class="right">
+                <section>
+                    <h2>Experiencia / Prácticas</h2>
                     
-                    <article class="job-item">
-                        <h3>Técnico en Prácticas de Sistemas e Informática</h3>
-                        <p class="company">Ayuntamiento de Aguilar de la Frontera | 3 meses</p>
+                    <div class="job">
+                        <h3>Ayuntamiento de Aguilar de la Frontera</h3>
+                        <p class="role">Prácticas Soporte e Informática (3 meses)</p>
                         <ul>
-                            <li>Mantenimiento informático preventivo y correctivo del equipamiento corporativo.</li>
-                            <li>Soporte técnico a usuarios finales y resolución de incidencias en sistemas operativos.</li>
-                            <li>Configuración de equipos, periféricos y asistencia en la red local municipal.</li>
+                            <li>Mantenimiento de equipos y red municipal.</li>
+                            <li>Soporte técnico y resolución de incidencias.</li>
                         </ul>
-                    </article>
+                    </div>
 
-                    <article class="job-item">
-                        <h3>Técnico en Prácticas de Soporte e Infraestructura</h3>
-                        <p class="company">Mancomunidad de Municipios de Campiña Sur (Aguilar de la Frontera) | 3 meses</p>
+                    <div class="job">
+                        <h3>Mancomunidad Campiña Sur</h3>
+                        <p class="role">Prácticas Sistemas (3 meses)</p>
                         <ul>
-                            <li>Gestión y puesta a punto de puestos de trabajo e infraestructura microinformática.</li>
-                            <li>Administración básica de usuarios, permisos y configuración de red.</li>
-                            <li>Documentación técnica y atención directa a incidencias del personal.</li>
+                            <li>Configuración de puestos de trabajo.</li>
+                            <li>Atención de incidencias de usuarios.</li>
                         </ul>
-                    </article>
+                    </div>
                 </section>
-            </section>
+            </div>
         </main>
     </div>
 
     <script>
         function cambiarModo() {
-            document.body.classList.toggle('oscuro');
+            document.querySelector('.container').classList.toggle('oscuro');
         }
     </script>
 </body>
