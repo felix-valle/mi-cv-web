@@ -1,63 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Professional Resume</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <button onclick="cambiarModo()" style="padding: 10px; margin: 10px; cursor: pointer;">Change Color</button>
-        <div class="container">
-            <div class="header">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Félix Valle Montes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado / Header -->
+        <header class="header">
+            <div class="header-content">
                 <div class="img-area">
-                    <img src="foto_curriculum.jpeg" alt="Resume photo">
+                    <img src="foto_curriculum.jpeg" alt="Fotografía de Félix Valle Montes">
                 </div>
-                <h1>Felix Valle Montes</h1>
-                <h3>Web Application Student (2nd Year DAW)</h3>
+                <div class="header-text">
+                    <h1>Félix Valle Montes</h1>
+                    <h2>Desarrollador Web (Estudiante de 2º de DAW)</h2>
+                    <p class="tagline">Especializándome en desarrollo frontend y backend con base en sistemas y redes.</p>
+                </div>
             </div>
+            <button onclick="cambiarModo()" class="btn-toggle-theme" aria-label="Cambiar modo de color">
+                🌙 Modo Oscuro / Claro
+            </button>
+        </header>
 
-            <div class="main">
-                <div class="left">
-                    <h2>Personal Information</h2>
-                    <p><strong>Name: </strong>Felix Valle Montes</p>
-                    <p><strong>Age: </strong>20</p>
-                    <p><strong>Email: </strong>felixvallevm@gmail.com</p>
-                    <p><strong>Phone: </strong>633373096</p>
+        <!-- Contenido Principal -->
+        <main class="main">
+            <!-- Columna Izquierda: Información de contacto, Habilidades y Formación -->
+            <aside class="left">
+                <section class="section">
+                    <h2>Contacto</h2>
+                    <ul class="contact-info">
+                        <li><strong>Email:</strong> <a href="mailto:felixvallevm@gmail.com">felixvallevm@gmail.com</a></li>
+                        <li><strong>Teléfono:</strong> <a href="tel:+34633373096">+34 633 37 30 96</a></li>
+                        <li><strong>Ubicación:</strong> Córdoba, España</li>
+                        <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/felixvalle</a></li>
+                        <li><strong>GitHub:</strong> <a href="#" target="_blank">github.com/felixvalle</a></li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Competencias Técnicas</h2>
+                    <ul class="skills-list">
+                        <li><strong>Lenguajes:</strong> HTML5, CSS3, JavaScript, PHP, Python</li>
+                        <li><strong>Bases de Datos:</strong> MySQL / MariaDB</li>
+                        <li><strong>Herramientas y Entornos:</strong> Git, GitHub, VS Code</li>
+                        <li><strong>Sistemas y Redes:</strong> Linux, Windows Server, Redes Locales (LAN/WLAN)</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Aptitudes Profesionales</h2>
+                    <ul class="soft-skills">
+                        <li>Trabajo en equipo y comunicación proactiva</li>
+                        <li>Capacidad de aprendizaje rápido y autodidacta</li>
+                        <li>Resolución eficiente de problemas técnicos</li>
+                        <li>Adaptabilidad a nuevas tecnologías y metodologías</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Formación Académica</h2>
+                    <div class="education-item">
+                        <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+                        <p class="institution">IES Gran Capitán, Córdoba</p>
+                        <p class="date">Actualmente cursando (2º curso) | 2024 - Presente</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+                        <p class="institution">IES Vicente Núñez, Aguilar de la Frontera</p>
+                        <p class="date">Completado</p>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Columna Derecha: Experiencia Laboral y Perfil -->
+            <section class="right">
+                <section class="section">
+                    <h2>Perfil Profesional</h2>
+                    <p>
+                        Estudiante de último curso del Grado Superior de Desarrollo de Aplicaciones Web con formación previa en Sistemas Microinformáticos y Redes. Apasionado por la programación web, el desarrollo de software a medida y la resolución de retos técnicos. Buscando una oportunidad de prácticas FCT donde aportar valor, seguir aprendiendo de un equipo experimentado y desarrollarme profesionalmente.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>Experiencia Laboral / Prácticas</h2>
                     
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>I can program in Python/HTML</li>
-                        <li>I am social and love working in a team</li>
-                        <li>If I am not specialized in something, I can study and learn it easily</li>
-                    </ul>
+                    <article class="job-item">
+                        <h3>Técnico en Prácticas de Sistemas e Informática</h3>
+                        <p class="company">Ayuntamiento de Aguilar de la Frontera | 3 meses</p>
+                        <ul>
+                            <li>Mantenimiento informático preventivo y correctivo del equipamiento corporativo.</li>
+                            <li>Soporte técnico a usuarios finales y resolución de incidencias en sistemas operativos.</li>
+                            <li>Configuración de equipos, periféricos y asistencia en la red local municipal.</li>
+                        </ul>
+                    </article>
 
-                    <h2>Education</h2>
-                    <h3>Intermediate Degree in Microcomputer Systems and Networks</h3>
-                    <p>IES Vicente Núñez</p>
-                    <h3>Higher Degree in Web Development (DAW)</h3>
-                    <p>IES Gran Capitán</p>
-                </div>
+                    <article class="job-item">
+                        <h3>Técnico en Prácticas de Soporte e Infraestructura</h3>
+                        <p class="company">Mancomunidad de Municipios de Campiña Sur (Aguilar de la Frontera) | 3 meses</p>
+                        <ul>
+                            <li>Gestión y puesta a punto de puestos de trabajo e infraestructura microinformática.</li>
+                            <li>Administración básica de usuarios, permisos y configuración de red.</li>
+                            <li>Documentación técnica y atención directa a incidencias del personal.</li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
 
-                <div class="right">
-                    <h2>Work Experience</h2>
-                    <h3>Internship at Mancomunidad de Aguilar de la Frontera : 3 months</h3>
-                    <h3>Internship at Aguilar de la Frontera Town Hall : 3 months</h3>
-
-                    <h2>Hobbies</h2>
-                    <ul>
-                        <li>Running</li>
-                        <li>Going to the gym</li>
-                        <li>Spending time with friends</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     <script>
-    function cambiarModo() {
-        document.querySelector('.container').classList.toggle('oscuro');
-    }
-</script>
-    </body>
+        function cambiarModo() {
+            document.body.classList.toggle('oscuro');
+        }
+    </script>
+</body>
 </html>
